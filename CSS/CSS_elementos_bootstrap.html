@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <title>Primer Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-white"></div>
+        <nav class="col navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio<span class="sr-only">(home)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">link1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Lista desplegable
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Accion1</a>
+                            <a class="dropdown-item" href="#">Accion2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Accion3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Desactivado</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Boton Buscar</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container">
+        </div>
+
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Mi Pagina web</h1>
+        <p class="lead">Agencia Indomitos</p>
+        <hr class="my-4">
+        <p>Pagina web de marketing digital.</p>
+        <button type="button" class="btn btn-default">AGENCIA</button>
+        <button type="button" class="btn btn-primary">MARKETING</button>
+        <button type="button" class="btn btn-success">DIGITAL</button>
+        </p>
+    </div>
+    </div>
+    <br>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo Electronico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresa el correo">
+    </div>
+    <div class="mb-3">
+        <label for="descripcion" class="form-label">Ingrese Descripción</label>
+        <textarea class="form-control" id="descripcion" rows="3"></textarea>
+    </div>
+    <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+    <input class="form-control" type="text" placeholder="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+    <form class="row g-3">
+        <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div>
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-warning btn-lg">Confirmar identidad</button>
+        </div>
+    </form>
+
+    </div>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

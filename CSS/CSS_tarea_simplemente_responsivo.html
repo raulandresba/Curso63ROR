@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        /*
+        Teléfono	Ancho menor o igual a 480px
+        Tablet	Ancho entre  481px y 1023px
+        Desktop	Ancho mayor o igual a 1024px
+        */
+        
+        .box {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+        }
+        
+        #header {
+            background-color: #b3b3b3;
+        }
+        
+        #content {
+            background-color: #cccccc;
+        }
+        
+        #footer {
+            background-color: #ffff9a;
+        }
+        
+        @media only screen and (max-width: 480px) {
+            #desktop,
+            #tablet {
+                display: none;
+            }
+        }
+        
+        @media only screen and (min-width: 481px) and (max-width: 1023px) {
+            #desktop,
+            #telefono {
+                display: none;
+            }
+        }
+        
+        @media only screen and (min-width: 1024px) {
+            #telefono,
+            #tablet {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="header">
+        <h1>@Media Querys</h1>
+    </div>
+    <div class="box" id="content">
+        <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent
+            of HTML and can be used with any XML-based markup language.</p>
+    </div>
+    <div class="box" id="footer">
+        <p id="telefono">Teléfono Ancho menor o igual a 480px </p>
+        <p id="tablet">Tablet Ancho entre 481px y 1023px </p>
+        <p id="desktop">Desktop Ancho mayor o igual a 1024px</p>
+    </div>
+</body>
+
+</html>
