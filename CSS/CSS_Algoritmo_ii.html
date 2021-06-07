@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Respuesta Dojo
+        //Respuestahello x is 15
+        //Respuestan is 3, x is 18
+        //Respuestan is 3, n is 5, x is 16
+        //Respuestac is 5, c is 8, x is 13
+        //Respuesta c is 5, c is 3, c is 5, c is 6, c is 3, c es 5, c is 8, x is 19
+        //Respuesta15, 15
+
+        //Respuesta 2,3
+        //Respuesta 6, 10
+        //Respuesta 3, 7
+        //Respuesta 15, 15, 10, 15
+        //Respuesta 0, 2,4,6,8,10,12,14
+        //Respuesta. 0,0,0,1,0,2
+        //Respuesta. 0,0,0,0,1,2,0,2,4
+        //Respuesta. 0,0,0,0,0,0,1,2,3,4,0,2,4,6,8,15
+
+        // Parte 2
+
+        // 15. Print 1 to X
+        function printUpTo(x) {
+            if (x > 0) {
+                for (var i = 1; i <= x; i++) {
+                    console.log(i);
+                }
+            } else {
+                console.log('negative number');
+                return false;
+            }
+        }
+
+        // 16. PrintSum
+        function printSum(x) {
+            var sum = 0;
+            for (i = 0; i <= x; i++) {
+                sum = sum + i;
+                console.log("i", i, "sum", sum);
+            }
+            return sum
+        }
+
+        //17. PrintSumArray
+        function printSumArray(x) {
+            var sum = 0;
+            for (var i = 0; i < x.length; i++) {
+                sum = sum + x[i];
+            }
+            return sum;
+        }
+        //18. LargestElement
+        function largestElement(x) {
+            var numMayor = x[0];
+            for (var i = 1; i < x.length; i++) {
+                if (x[i] > numMayor) {
+                    numMayor = x[i];
+                }
+            }
+            return numMayor;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
