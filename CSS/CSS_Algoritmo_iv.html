@@ -58,14 +58,14 @@
         //4. Dado un array y su respectivo índice, remueve los valores en el rango del índice dado( acortando el array). Por ejemplo, removerRango([20,30,40,50,60,70],2,4)debiera devolver [20,30,70].
 
         function removerRango(arr, inicio, fin) {
-            for (var i = inicio; i <= fin; i++) {
-                arr[i] = arr[i + offset];
+            var reemplazo = fin - inicio + 1;
+            for (var i = inicio; i <= reemplazo; i++) {
+                arr[i] = arr[i + reemplazo];
             }
-            console.log(arr);
-            arr.length = arr.length - offset;
+            arr.length = arr.length - reemplazo;
             return arr;
         }
-        var result = removerRango([20, 30, 40, 50, 60, 70], 2, 4);
+        var result = removerRango([20, 30, 40, 50, 60, 70, 80, 90, 100], 1, 3);
         console.log(result);
     </script>
 </head>
