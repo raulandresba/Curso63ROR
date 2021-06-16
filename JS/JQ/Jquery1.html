@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                console.log('mi primer JQ');
+                alert("mi primer JQ");
+            });
+            $('#enviar3').click(function() {
+                console.log('enviar desde el boton 3 por id');
+                alert("enviar desde el boton 3 por id");
+            });
+            $('.enviar4').click(function() {
+                console.log('enviar desde la clase boton 4');
+                alert("enviar desde la clase boton 4");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <input type="button" value="enviar 1">
+        <input type="button" value="enviar 1" id="enviar3">
+        <input type="button" value="enviar 1" class="enviar4">
+    </div>
+</body>
+
+</html>
