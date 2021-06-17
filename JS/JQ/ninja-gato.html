@@ -9,33 +9,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
+            // metodo 1, no utiliza html
+            // este metodo utliza for para incorporar las imagenes, gracias a que tienen un número al final. Por ende no serviría para imagenes que no tengan un numero al final, a menos que las imagenes se integren a un arreglo []
+            for (let i = 0; i <= 4; i++) {
+                $('#container').append('<img src="img/ninja' + i + '.png" alt-src="img/cat' + i + '.png">');
+                $('#container').append('<br>')
+            }
             $('img').click(function() {
-                $(this).attr('container', $(this).attr('src'));
-                $(this).attr('src', $(this).attr('data-alt-src'));
-                $(this).attr('data-alt-src', $(this).attr('container'));
-            })
-            $('img').addClass('imagenes');
-            $('img').click(function() {
-                console.log('data-alt-src value is', $(this).attr('data-alt-src'));
-            });
+                var temp = $(this).attr('src');
+                var nuevaImagen = $(this).attr('alt-src');
+                $(this).attr('src', nuevaImagen);
+                $(this).attr('alt-src', temp);
 
-        })
+            });
+        });
+        //     //metodo 2            
+        //     $('img').click(function() {
+        //         $(this).attr('container', $(this).attr('src')); //attr sirve para asignar un atributo (el primero que encuentra)
+        //         $(this).attr('src', $(this).attr('data-alt-src'));
+        //         $(this).attr('data-alt-src', $(this).attr('container'));
+        //     })
+        //     $('img').addClass('imagenes');
+        //     $('img').click(function() {
+        //         console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+        //     });
+
+        // });
     </script>
     <style>
-        .imagenes {
+        /* .imagenes {
             display: block;
             width: 300px;
             margin: 3px;
-        }
+        } */
     </style>
 
     <body>
         <div id="container">
-            <img src="img/ninja0.png" data-alt-src="img/cat0.png">
+            <!-- necesario para ambos metodos -->
+            <!-- <img src="img/ninja0.png" data-alt-src="img/cat0.png">
             <img src="img/ninja1.png" data-alt-src="img/cat1.png">
             <img src="img/ninja2.png" data-alt-src="img/cat2.png">
             <img src="img/ninja3.png" data-alt-src="img/cat3.png">
-            <img src="img/ninja4.png" data-alt-src="img/cat4.png">
+            <img src="img/ninja4.png" data-alt-src="img/cat4.png"> -->
         </div>
     </body>
 
