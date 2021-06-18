@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>probando ON ()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script> ejemplo1
+        $(document).ready(function() {
+            $('button').click(function() {
+                $('div').append('<h3>I am a dynamically generated h3 </h3>');
+            });
+            $(document).on('click', 'h3', function() {
+                alert('You clicked me!');
+            });
+        });
+    </script>
+    <style>
+
+    </style>
+
+    <body>
+        <h3>Contenido estatico</h3>
+        <div>
+            <button class="alert">clickeame para enviar un mensaje</button>
+            <button class="alert">clickeame para enviar un mensaje</button>
+
+
+
+        </div>
+    </body> -->
+
+    <script>
+        $(document).ready(function() {
+            $('button').click(function() {
+                $('div').append('<h3>I am a new content</h3>');
+            });
+            $('div.a').on('mouseover', 'h3', function() {
+                $(this).css('color', 'pink');
+            });
+        });
+    </script>
+
+    <body>
+        <button>Click me</button>
+        <div class="a">
+            <h3>I am old content</h3>
+        </div>
+        <div class="b">
+            <h3>I am old content</h3>
+        </div>
+    </body>
+
+
+</html>
