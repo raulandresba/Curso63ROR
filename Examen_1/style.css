@@ -1,0 +1,180 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    padding: 2%;
+}
+
+#pc {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu1 {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#box1 {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+#about {
+    color: black;
+    width: 40%;
+    display: inline-block;
+    padding-right: 10%;
+    vertical-align: top;
+}
+
+#button1 {
+    background-color: black;
+    color: white;
+    width: 25%;
+    border-radius: 5px;
+    float: right;
+    padding: 5px;
+}
+
+#boy {
+    width: 49%;
+    height: auto;
+    display: inline-block;
+}
+
+#box2 {
+    background-color: gainsboro;
+    width: 100%;
+    margin-top: 2%;
+    height: 550px;
+}
+
+.contenido {
+    color: black;
+    width: 70%;
+    display: inline-block;
+    margin-top: 4%;
+}
+
+.miniFeafure {
+    width: 28%;
+    display: inline-block;
+    padding: 2%;
+    vertical-align: top;
+    border-left: 1px solid grey;
+    height: 180px;
+}
+
+.features {
+    width: 90%;
+    margin-top: 4%;
+}
+
+#extraInfo {
+    background-color: white;
+    color: black;
+    width: 28%;
+    float: right;
+    vertical-align: top;
+    padding: 1%;
+    margin-top: 2%;
+    height: 500px;
+}
+
+.extra1 {
+    width: 50%;
+    display: inline-block;
+}
+
+#recycle {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#footer {
+    color: white;
+    background-color: black;
+    height: 300px;
+}
+
+.inFooter {
+    width: 26%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2%;
+}
+
+.menu2 {
+    border-bottom: 1px solid grey;
+}
+
+.name,
+.email {
+    color: white;
+    width: 30%;
+    padding: 2%;
+    border: 2% solid black;
+    background-color: gray;
+    margin-right: 2%;
+}
+
+.phone {
+    color: white;
+    margin-top: 2%;
+    width: 70%;
+    padding: 2%;
+    border: 2% solid black;
+    background-color: gray;
+}
+
+#button2 {
+    color: white;
+    width: 15%;
+    background: linear-gradient(gray, black);
+    text-align: center;
+    padding: 1%;
+    border: 2% solid black;
+}
+
+#footer2 {
+    color: grey;
+    background-color: white;
+    text-align: center;
+}
+
+.iconos {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h1,
+h2,
+p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+li {
+    margin: 5px;
+}
